@@ -26,7 +26,7 @@ public class BashCore : ModuleRules
 			new string[]
 			{
 				"Core", "LimbitlessBluetoothPlugin",
-				"UMG", "InputCore", "EnhancedInput"
+				"UMG", "InputCore", "EnhancedInput", "CustomizableObject"
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -39,7 +39,7 @@ public class BashCore : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
-				"SkeletalMerging"
+				"CustomizableObject",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
