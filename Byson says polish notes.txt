@@ -1,0 +1,32 @@
+Byson says polish notes
+
+______________________________________
+----Bugs:----
+
+
+----Polish ideas:----
+Make different types of beats correspond to different flex strengths
+	Could correspond w/pitch or volume? Or just be random but that's boring
+Additional set dressing
+Improve timing with pauses between listen and repeat somehow to prevent the rushed feeling of the game and give player chance to get their bearings
+
+
+_______________________________________
+----In progress:----
+Familiarization w/project
+Learning about the quartz/sound system in unreal
+Setting beat/flex types for each chop
+
+----Done today:----
+Finish updating game to unreal 5.6
+Fix compiler errors
+Add missing bash components like player spawn points and integration of minigame mode into game
+Fix gnome animation timing with beats
+Add randomization element for which beats are chops so it isn't the same chopping pattern every time
+
+
+_________________________________________
+----Weekly reports:----
+
+11/14:
+Today, I finished updating Byson says to Unreal 5.6, fixed compiler errors that were in the project, added missing bash components such as spawn points and the proper minigame mode integration, fixed the gnome animation timing with the beats, and added a randomization element to which beats the gnome/player chops on so it isn't the same pattern every time.
