@@ -2,6 +2,7 @@ Byson says polish notes
 
 ______________________________________
 ----Bugs:----
+First (second total) measure seems to only let player input once?
 
 
 ----Polish ideas:----
@@ -13,16 +14,11 @@ Improve timing with pauses between listen and repeat somehow to prevent the rush
 
 _______________________________________
 ----In progress:----
-Familiarization w/project
-Learning about the quartz/sound system in unreal
-Setting beat/flex types for each chop
+Working on setting up game to have different types of chops for beats which correspond to flex strength, setting up scoring
 
 ----Done today:----
-Finish updating game to unreal 5.6
-Fix compiler errors
-Add missing bash components like player spawn points and integration of minigame mode into game
-Fix gnome animation timing with beats
-Add randomization element for which beats are chops so it isn't the same chopping pattern every time
+Fix timing of gnome chops/measures
+Set up randomized different types of chops and integrate into game where previously it was just haschop/does not have chop
 
 
 _________________________________________
@@ -30,3 +26,10 @@ _________________________________________
 
 11/14:
 Today, I finished updating Byson says to Unreal 5.6, fixed compiler errors that were in the project, added missing bash components such as spawn points and the proper minigame mode integration, fixed the gnome animation timing with the beats, and added a randomization element to which beats the gnome/player chops on so it isn't the same pattern every time.
+
+11/17
+Today, I set up randomized different types of chops and integrated them into the game where previously the game only had has chop on beat/does not have chop.  These different types of chops will correspond with flex strengths, which I am working on integrating into scoring.
+
+
+Notes:
+Keep in mind the ok/perfect calculations, don't mess them up!
