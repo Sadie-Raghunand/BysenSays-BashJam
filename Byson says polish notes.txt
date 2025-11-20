@@ -17,8 +17,7 @@ _______________________________________
 Working on setting up game to have different types of chops for beats which correspond to flex strength, setting up scoring
 
 ----Done today:----
-Fix timing of gnome chops/measures
-Set up randomized different types of chops and integrate into game where previously it was just haschop/does not have chop
+Set up input for different types of chops
 
 
 _________________________________________
