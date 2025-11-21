@@ -6,28 +6,27 @@ First (second total) measure seems to only let player input once?
 
 
 ----Polish ideas:----
-Make different types of beats correspond to different flex strengths
-	Could correspond w/pitch or volume? Or just be random but that's boring
+Correspond different chop types with pitch or volume of song
+	Alternatively, alter the audio do increase pitch/volume on different chops
+	Definitely change gnome's animations for different chops and the chop sound
 Additional set dressing
-Improve timing with pauses between listen and repeat somehow to prevent the rushed feeling of the game and give player chance to get their bearings
+
+
 
 
 _______________________________________
 ----In progress:----
-Working on setting up game to have different types of chops for beats which correspond to flex strength, setting up scoring
 
 ----Done today:----
-Set up input for different types of chops
+Fix some bugs and balancing with how the scoring handles the different types of chops
+Setup to also show "Miss" UI when the player does not chop on a beat with a chop
+Added pause between gnome's measures and player's, music syncs
+Sync UI and music with pause between turns
 
 
 _________________________________________
 ----Weekly reports:----
 
-11/14:
-Today, I finished updating Byson says to Unreal 5.6, fixed compiler errors that were in the project, added missing bash components such as spawn points and the proper minigame mode integration, fixed the gnome animation timing with the beats, and added a randomization element to which beats the gnome/player chops on so it isn't the same pattern every time.
-
-11/17
-Today, I set up randomized different types of chops and integrated them into the game where previously the game only had has chop on beat/does not have chop.  These different types of chops will correspond with flex strengths, which I am working on integrating into scoring.
 
 
 Notes:
