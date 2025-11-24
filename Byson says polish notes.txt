@@ -2,32 +2,33 @@ Byson says polish notes
 
 ______________________________________
 ----Bugs:----
-First (second total) measure seems to only let player input once?
 
 
 ----Polish ideas:----
 Correspond different chop types with pitch or volume of song
 	Alternatively, alter the audio do increase pitch/volume on different chops
 	Definitely change gnome's animations for different chops and the chop sound
-Additional set dressing
+Additional set dressing, general visual cleanup
+Make cutscenes
+	Tag issue forgot how to fix this
+	Need to prevent game from starting meaning measres cannot run! Until cutscene is over
+Add the AI thing
 
 
 
 
 _______________________________________
 ----In progress:----
+Intro cutscene
+	How to prevent time/gnome from running during cutscene?
 
 ----Done today:----
-Fix some bugs and balancing with how the scoring handles the different types of chops
-Setup to also show "Miss" UI when the player does not chop on a beat with a chop
-Added pause between gnome's measures and player's, music syncs
-Sync UI and music with pause between turns
+Fix bug that prevented player from inputting more than once during the first measure
+Apply mod character animations since axe isle wasn't working
+Additional set dressing and aesthetic changes to camera position
 
 
 _________________________________________
 ----Weekly reports:----
+Today, I fixed a bug that prevented the player from inputting more than once during their first repeat measure, applied some of the newer character animations for the player since the idle one from the original was not working, did additional set dressing with the serenity environment assets, and am working on the intro cutscene.
 
-
-
-Notes:
-Keep in mind the ok/perfect calculations, don't mess them up!
