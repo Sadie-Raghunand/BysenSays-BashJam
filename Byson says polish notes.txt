@@ -2,16 +2,14 @@ Byson says polish notes
 
 ______________________________________
 ----Bugs:----
-
+Get ready text + pause only occurs in practice, not 
 
 ----Polish ideas:----
 Correspond different chop types with pitch or volume of song
 	Alternatively, alter the audio do increase pitch/volume on different chops
 	Definitely change gnome's animations for different chops and the chop sound
-Additional set dressing, general visual cleanup
 Make cutscenes
 	Tag issue forgot how to fix this
-	Need to prevent game from starting meaning measres cannot run! Until cutscene is over
 Add the AI thing
 
 
@@ -19,16 +17,16 @@ Add the AI thing
 
 _______________________________________
 ----In progress:----
-Intro cutscene
-	How to prevent time/gnome from running during cutscene?
+End cutscene
 
 ----Done today:----
-Fix bug that prevented player from inputting more than once during the first measure
-Apply mod character animations since axe isle wasn't working
-Additional set dressing and aesthetic changes to camera position
+Fix beats/bars playing before the intro cutscene was finished
+Fixing get ready pause in game
 
 
 _________________________________________
 ----Weekly reports:----
-Today, I fixed a bug that prevented the player from inputting more than once during their first repeat measure, applied some of the newer character animations for the player since the idle one from the original was not working, did additional set dressing with the serenity environment assets, and am working on the intro cutscene.
+
+12/1
+Today I fixed a couple bugs where beats would play before the intro cutscene finished and one where the pause between the player and gnome's turn would only occur in practice mode.  I am working on setting up the end cutscene.
 
