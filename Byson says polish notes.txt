@@ -2,7 +2,7 @@ Byson says polish notes
 
 ______________________________________
 ----Bugs:----
-
+Player animations look like they get immediately interupted
 
 ----Polish ideas:----
 Definitely change gnome's animations for different chops and the chop sound (Priority)
@@ -13,22 +13,17 @@ Add the AI thing
 
 _______________________________________
 ----In progress:----
-Working on replacing sfx for chop during runtime based on chop type
-Learning how to use and manipulate anim notifies
+Debug player animations not completing, converting to animation blueprint to try and fix but also check to fix montages since that is more like a trigger animation
 
 ----Done today:----
-Finish end cutscene
-Find and edit sfx for other types of chops
+Fix bug where gnome does not register there is a beat in anim notify
 
 
 _________________________________________
-----Weekly reports:----
+----Weekly reports:---- 
 
-12/1
-Today I fixed a couple bugs where beats would play before the intro cutscene finished and one where the pause between the player and gnome's turn would only occur in practice mode.  I am working on setting up the end cutscene.
-
-12/5
-Today, I finished the end cutscene, found and edited sfx for the multiple chop types, learned about how to play sound from and create custom anim notifies, started implemented the chop sfx changes into the gnome and player animations, and am currently debugging the notifies.  
+1/12
+ Today, I fixed a bug with the gnome triggering different types of chops not working and worked on a bug preventing the player's animations from playing.
 
 
 ________________________
@@ -38,6 +33,3 @@ Other sfx credits that I added
 Light flex chop - "chopping wood 2" by Jay_You on Freesound
 Med flex chop - Already in project
 Heavy flex chop - "knife_chop", deleted user, on Freesound
-
-Notes!
-Currently working on getting there to be different sounds for the chop types.  This is done in a custom anim notify called AN_ChangeChopSFX to be used on the gnome's animation montage and the player's.  Debugging why chop type for gnome always returns 0.  Not implemented with player yet.  Also in player's anim montage, chop woosh is set to trigger chance 0 for debugging
