@@ -2,21 +2,23 @@ Byson says polish notes
 
 ______________________________________
 ----Bugs:----
-Player animations look like they get immediately interupted
+Multiple players do not spawn in at spawn locations
 
 ----Polish ideas:----
-Definitely change gnome's animations for different chops and the chop sound (Priority)
+Definitely change gnome's animations (and/or other visual indicator) for different chops and the chop sound (Priority)
 Add the AI thing
+Relook at player animations playing w montage vs sequence player
 
 
 
 
 _______________________________________
 ----In progress:----
-Debug player animations not completing, converting to animation blueprint to try and fix but also check to fix montages since that is more like a trigger animation
+Incorporating AI controller
 
 ----Done today:----
-Fix bug where gnome does not register there is a beat in anim notify
+Fix player animations not playing
+Add UI above gnome to show which type of chop the gnome is doing so there is visual and auditory indications now
 
 
 _________________________________________
@@ -25,7 +27,8 @@ _________________________________________
 1/12
  Today, I fixed a bug with the gnome triggering different types of chops not working and worked on a bug preventing the player's animations from playing.
 
-
+1/14
+Today, I fixed the player animations not playing, added a UI element to indicate which type of chop the gnome executes, and am working on incorporating the minigame AI into the game.
 ________________________
 
 
