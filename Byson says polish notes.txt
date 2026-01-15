@@ -2,7 +2,6 @@ Byson says polish notes
 
 ______________________________________
 ----Bugs:----
-Multiple players do not spawn in at spawn locations
 
 ----Polish ideas:----
 Definitely change gnome's animations (and/or other visual indicator) for different chops and the chop sound (Priority)
@@ -27,8 +26,11 @@ _________________________________________
 1/12
  Today, I fixed a bug with the gnome triggering different types of chops not working and worked on a bug preventing the player's animations from playing.
 
-1/14
+1/14 (NOT LOGGED IN TEAMS???)
 Today, I fixed the player animations not playing, added a UI element to indicate which type of chop the gnome executes, and am working on incorporating the minigame AI into the game.
+
+1/15
+Today, I fixed a bug where players would not spawn correctly if there was more than one, and continued working on implementing the minigame AI, beginning working on making the players pick a chop to play.
 ________________________
 
 
@@ -36,3 +38,8 @@ Other sfx credits that I added
 Light flex chop - "chopping wood 2" by Jay_You on Freesound
 Med flex chop - Already in project
 Heavy flex chop - "knife_chop", deleted user, on Freesound
+
+
+Notes on debugging AI:
+
+AI controller by name spawns in at more than one player spawned in
