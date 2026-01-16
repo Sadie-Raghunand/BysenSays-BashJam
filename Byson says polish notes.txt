@@ -2,6 +2,8 @@ Byson says polish notes
 
 ______________________________________
 ----Bugs:----
+Incorrect Success/fail UI shows above AI players' heads
+Players don't carry axe, lowkey a model problem how to fix?
 
 ----Polish ideas:----
 Definitely change gnome's animations (and/or other visual indicator) for different chops and the chop sound (Priority)
@@ -13,12 +15,14 @@ Relook at player animations playing w montage vs sequence player
 
 _______________________________________
 ----In progress:----
-Incorporating AI controller
+Debugging/bug searching AI incorporation
+Reconsidering scoring
+Making AI more intelligent somehow (higher likelihood of doing adjacent chop types like if the answer is 1 more likely to do 2 than 4?)
+Check the sfx happen properly
 
 ----Done today:----
-Fix player animations not playing
-Add UI above gnome to show which type of chop the gnome is doing so there is visual and auditory indications now
-
+Refactor briefly player animation transition code
+AI players do chops on their beats with a higher chance to succeed and chance to fail
 
 _________________________________________
 ----Weekly reports:---- 
@@ -29,8 +33,11 @@ _________________________________________
 1/14 (NOT LOGGED IN TEAMS???)
 Today, I fixed the player animations not playing, added a UI element to indicate which type of chop the gnome executes, and am working on incorporating the minigame AI into the game.
 
-1/15
+1/15 NOT LOGGED
 Today, I fixed a bug where players would not spawn correctly if there was more than one, and continued working on implementing the minigame AI, beginning working on making the players pick a chop to play.
+
+1/16 NOT LOGGED
+Today, I refactored part of the player animation transition code and continued integrating the minigame AI by setting up AI players to do chops on the proper beats in the song, which a higher chance to succeed and lower chance to fail.
 ________________________
 
 
