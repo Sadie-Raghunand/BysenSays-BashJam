@@ -43,6 +43,9 @@ Today, I refactored part of the player animation transition code and continued i
 
 1/21
 Today, I updated the practice UI directions to reflect the current state of the game, fixed the UI for the gnome's chop type to disappear after the gnome's turn, and am working on balancing scoring between AI players and normal players to make the game more fair, as well as re-working scoring to account for some edge cases where the players' score can be too high.
+
+1/22
+Today, I continued refactoring and debugging the scoring system for both AI players and normal players to better reflect the new additions made to the minigame.
 ________________________
 
 
@@ -55,3 +58,6 @@ Heavy flex chop - "knife_chop", deleted user, on Freesound
 Notes on debugging AI:
 
 AI controller by name spawns in at more than one player spawned in, thats probably supposed to happen? Random ai controller spawns at 1 player
+
+Notes on debugging scoring:
+Discover the edge cases where miss and hit are not triggered
