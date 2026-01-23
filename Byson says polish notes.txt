@@ -16,14 +16,18 @@ Relook at player animations playing w montage vs sequence player
 
 _______________________________________
 ----In progress:----
+Math for AI offset!
 Debugging/bug searching AI incorporation
-!!!Reconsidering scoring for AI and general
 Making AI more intelligent somehow (higher likelihood of doing adjacent chop types like if the answer is 1 more likely to do 2 than 4?)
 Make AI players spawn in to replace missing normal players
 
 ----Done today:----
-Update practice UI
-Fix ui for chop type to go away after gnome's turn
+Fix hit/miss animations sometimes happening at the incorrect times
+Fix edge cases where point calculations would not occur when player did a chop
+Add a hit offset equivalent to AI chops to balance scoring between AI and real players, base and working on mking more intuitive so it isn't random value
+Fix some bugs where the incorrect miss/success message would appear for AI players
+Refactor animation and success message UI triggers to be put in their own function/code cleanup
+
 
 
 _________________________________________
@@ -46,6 +50,10 @@ Today, I updated the practice UI directions to reflect the current state of the 
 
 1/22
 Today, I continued refactoring and debugging the scoring system for both AI players and normal players to better reflect the new additions made to the minigame.
+
+1/23
+Today, I fixed hit/miss animations sometimes happening at incorrect times, fixed cases where point calculations would not occur on player chop, added a randomization to the AI's chop score to replicate the offset from the beats for normal players and am working on improving this to be less random, fixed some bugs where incorrect miss/success messages would appear for AI players, and refactored animation and success UI message code to make it more organized and avoid repeating similar code for normal and AI players.
+
 ________________________
 
 
@@ -58,6 +66,3 @@ Heavy flex chop - "knife_chop", deleted user, on Freesound
 Notes on debugging AI:
 
 AI controller by name spawns in at more than one player spawned in, thats probably supposed to happen? Random ai controller spawns at 1 player
-
-Notes on debugging scoring:
-Discover the edge cases where miss and hit are not triggered
