@@ -2,12 +2,10 @@ Byson says polish notes
 
 ______________________________________
 ----Bugs:----
-Incorrect Success/fail UI shows above AI players' heads
 Players don't carry axe, lowkey a model problem how to fix?
-AI doesn't chop?
 
 ----Polish ideas:----
-Definitely change gnome's animations (and/or other visual indicator) for different chops and the chop sound (Priority)
+Definitely change gnome's animations (and/or other visual indicator) for different chops and the 
 Add the AI thing
 Relook at player animations playing w montage vs sequence player
 
@@ -16,17 +14,11 @@ Relook at player animations playing w montage vs sequence player
 
 _______________________________________
 ----In progress:----
-Math for AI offset!
 Debugging/bug searching AI incorporation
-Making AI more intelligent somehow (higher likelihood of doing adjacent chop types like if the answer is 1 more likely to do 2 than 4?)
-Make AI players spawn in to replace missing normal players
+Make AI players spawn in to replace missing normal players, is this supposed to be automatic? find out
 
 ----Done today:----
-Fix hit/miss animations sometimes happening at the incorrect times
-Fix edge cases where point calculations would not occur when player did a chop
-Add a hit offset equivalent to AI chops to balance scoring between AI and real players, base and working on mking more intuitive so it isn't random value
-Fix some bugs where the incorrect miss/success message would appear for AI players
-Refactor animation and success message UI triggers to be put in their own function/code cleanup
+Finish setting up math for simulating an offset for scoring on AI players, incorporate into UI/animation cues on AI players
 
 
 
@@ -53,6 +45,9 @@ Today, I continued refactoring and debugging the scoring system for both AI play
 
 1/23
 Today, I fixed hit/miss animations sometimes happening at incorrect times, fixed cases where point calculations would not occur on player chop, added a randomization to the AI's chop score to replicate the offset from the beats for normal players and am working on improving this to be less random, fixed some bugs where incorrect miss/success messages would appear for AI players, and refactored animation and success UI message code to make it more organized and avoid repeating similar code for normal and AI players.
+
+1/26
+Today, I finished setting up the math for simulating a scoring equivalent for input offset on beats for the AI players and integrating it into the point counter, UI feedback, and animations.
 
 ________________________
 
