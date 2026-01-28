@@ -4,10 +4,9 @@ ______________________________________
 ----Bugs:----
 Players don't carry axe, lowkey a model problem how to fix?
 
-----Polish ideas:----
-Definitely change gnome's animations (and/or other visual indicator) for different chops and the 
-Add the AI thing
+----Polish ideas:---- 
 Relook at player animations playing w montage vs sequence player
+Make the ai players actually have a visual offset when chopping? not just applying to score math
 
 
 
@@ -15,10 +14,10 @@ Relook at player animations playing w montage vs sequence player
 _______________________________________
 ----In progress:----
 Debugging/bug searching AI incorporation
-Make AI players spawn in to replace missing normal players, is this supposed to be automatic? find out
+Animating axe/learning about control rigs
 
 ----Done today:----
-Finish setting up math for simulating an offset for scoring on AI players, incorporate into UI/animation cues on AI players
+Work on creatinga nd applying an animation to axe to move with player chop animation
 
 
 
@@ -48,6 +47,9 @@ Today, I fixed hit/miss animations sometimes happening at incorrect times, fixed
 
 1/26
 Today, I finished setting up the math for simulating a scoring equivalent for input offset on beats for the AI players and integrating it into the point counter, UI feedback, and animations.
+
+1/28
+Today, I worked on creating and applying an animation to the player's axe to correspond with the chop animations and am working on making them feel naturally part of the player animation by learning about control rigs and how to use them to create animation assets in engine.
 
 ________________________
 
