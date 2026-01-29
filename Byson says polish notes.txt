@@ -17,7 +17,7 @@ Debugging/bug searching AI incorporation
 Animating axe/learning about control rigs
 
 ----Done today:----
-Work on creatinga nd applying an animation to axe to move with player chop animation
+Create animations to sync with the player 
 
 
 
@@ -50,6 +50,9 @@ Today, I finished setting up the math for simulating a scoring equivalent for in
 
 1/28
 Today, I worked on creating and applying an animation to the player's axe to correspond with the chop animations and am working on making them feel naturally part of the player animation by learning about control rigs and how to use them to create animation assets in engine.
+
+1/29
+Today, I made an idle, hit, and miss animation for the axe to sync with the player's respective animations and started working on using the AI scoring calculations to apply a delay/speed up to the chops to make it more understandable when AI players get and lose points.
 
 ________________________
 
