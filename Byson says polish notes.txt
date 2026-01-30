@@ -2,7 +2,7 @@ Byson says polish notes
 
 ______________________________________
 ----Bugs:----
-Players don't carry axe, lowkey a model problem how to fix?
+
 
 ----Polish ideas:---- 
 Relook at player animations playing w montage vs sequence player
@@ -54,6 +54,8 @@ Today, I worked on creating and applying an animation to the player's axe to cor
 1/29
 Today, I made an idle, hit, and miss animation for the axe to sync with the player's respective animations and started working on using the AI scoring calculations to apply a delay/speed up to the chops to make it more understandable when AI players get and lose points.
 
+1/30
+Today, I worked on matching the timing of the AI players' chop animations to their score received on each chop to avoid perfect timing each time they act, and am working on syncing the success/fail UI to these offset animations and debugging that animations correspond to the proper beat for scoring.
 ________________________
 
 
