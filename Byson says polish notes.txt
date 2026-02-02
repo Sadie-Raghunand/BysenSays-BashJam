@@ -14,10 +14,11 @@ Make the ai players actually have a visual offset when chopping? not just applyi
 _______________________________________
 ----In progress:----
 Debugging/bug searching AI incorporation
-Animating axe/learning about control rigs
+
 
 ----Done today:----
-Create animations to sync with the player 
+Debug AI player animation/UI delay in accordance with the scoring offset
+Refactor animation/UI trigger code
 
 
 
@@ -56,6 +57,9 @@ Today, I made an idle, hit, and miss animation for the axe to sync with the play
 
 1/30
 Today, I worked on matching the timing of the AI players' chop animations to their score received on each chop to avoid perfect timing each time they act, and am working on syncing the success/fail UI to these offset animations and debugging that animations correspond to the proper beat for scoring.
+
+2/2
+Today, I finished debugging the animation and UI cues for the offset AI player chops and refactored/organized parts of the AI player code to make it more straightforward.
 ________________________
 
 
