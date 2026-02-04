@@ -2,7 +2,10 @@ Byson says polish notes
 
 ______________________________________
 ----Bugs:----
-
+Listen measures don't occur in game mode even though it works in practice mode
+	Ok now get ready measures dont occur?
+	OK sometimes des one sometimes does the other
+	Timing issue: carries over timing from practice mode, if start in listen or repeat 	measure, gets messed up, if in get ready measure, works
 
 ----Polish ideas:---- 
 Relook at player animations playing w montage vs sequence player
@@ -11,14 +14,15 @@ Make the ai players actually have a visual offset when chopping? not just applyi
 
 
 
+
 _______________________________________
 ----In progress:----
 Debugging/bug searching AI incorporation
+Playtesting for bugs and such
 
 
 ----Done today:----
-Debug AI player animation/UI delay in accordance with the scoring offset
-Refactor animation/UI trigger code
+
 
 
 
@@ -60,6 +64,9 @@ Today, I worked on matching the timing of the AI players' chop animations to the
 
 2/2
 Today, I finished debugging the animation and UI cues for the offset AI player chops and refactored/organized parts of the AI player code to make it more straightforward.
+
+2/4
+Today, I worked on a bug involving the timing of the Listen/Get Ready/Repeat measures where not all 3 cycles go through in play mode despite working in practice mode.
 ________________________
 
 
