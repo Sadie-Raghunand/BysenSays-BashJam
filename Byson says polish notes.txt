@@ -22,7 +22,7 @@ Playtesting for bugs and such
 
 
 ----Done today:----
-
+Fix beats not resetting between practice and game mode
 
 
 
@@ -67,6 +67,9 @@ Today, I finished debugging the animation and UI cues for the offset AI player c
 
 2/4
 Today, I worked on a bug involving the timing of the Listen/Get Ready/Repeat measures where not all 3 cycles go through in play mode despite working in practice mode.
+
+2/5
+Today, I fixed beats not resetting when entering game mode from practice, and continued trying to debug the UI in game mode not lining up with the timing.
 ________________________
 
 
