@@ -5,15 +5,10 @@ ______________________________________
 Listen measures don't occur in game mode even though it works in practice mode
 	Ok now get ready measures dont occur?
 	OK sometimes des one sometimes does the other
-	Timing issue: carries over timing from practice mode, if start in listen or repeat 	measure, gets messed up, if in get ready measure, works
+
 
 ----Polish ideas:---- 
 Relook at player animations playing w montage vs sequence player
-Make the ai players actually have a visual offset when chopping? not just applying to score math
-
-
-
-
 
 _______________________________________
 ----In progress:----
@@ -22,7 +17,7 @@ Playtesting for bugs and such
 
 
 ----Done today:----
-Fix beats not resetting between practice and game mode
+Discovered that the beats in gamemode run twice, continue debugging this issue in hopes its related to UI timing
 
 
 
@@ -70,6 +65,9 @@ Today, I worked on a bug involving the timing of the Listen/Get Ready/Repeat mea
 
 2/5
 Today, I fixed beats not resetting when entering game mode from practice, and continued trying to debug the UI in game mode not lining up with the timing.
+
+2/6
+Today, I continued debugging the UI timing issue, discovering a new, possibly related bug where functionality that should run once per beat runs multiple times, and worked on fixing this.
 ________________________
 
 
