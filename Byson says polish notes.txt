@@ -23,43 +23,6 @@ Discovered that the beats in gamemode run twice, continue debugging this issue i
 
 _________________________________________
 ----Weekly reports:---- 
-
-1/12
- Today, I fixed a bug with the gnome triggering different types of chops not working and worked on a bug preventing the player's animations from playing.
-
-1/14 (NOT LOGGED IN TEAMS???)
-Today, I fixed the player animations not playing, added a UI element to indicate which type of chop the gnome executes, and am working on incorporating the minigame AI into the game.
-
-1/15 NOT LOGGED
-Today, I fixed a bug where players would not spawn correctly if there was more than one, and continued working on implementing the minigame AI, beginning working on making the players pick a chop to play.
-
-1/16
-Today, I refactored part of the player animation transition code and continued integrating the minigame AI by setting up AI players to do chops on the proper beats in the song, which a higher chance to succeed and lower chance to fail.
-
-1/21
-Today, I updated the practice UI directions to reflect the current state of the game, fixed the UI for the gnome's chop type to disappear after the gnome's turn, and am working on balancing scoring between AI players and normal players to make the game more fair, as well as re-working scoring to account for some edge cases where the players' score can be too high.
-
-1/22
-Today, I continued refactoring and debugging the scoring system for both AI players and normal players to better reflect the new additions made to the minigame.
-
-1/23
-Today, I fixed hit/miss animations sometimes happening at incorrect times, fixed cases where point calculations would not occur on player chop, added a randomization to the AI's chop score to replicate the offset from the beats for normal players and am working on improving this to be less random, fixed some bugs where incorrect miss/success messages would appear for AI players, and refactored animation and success UI message code to make it more organized and avoid repeating similar code for normal and AI players.
-
-1/26
-Today, I finished setting up the math for simulating a scoring equivalent for input offset on beats for the AI players and integrating it into the point counter, UI feedback, and animations.
-
-1/28
-Today, I worked on creating and applying an animation to the player's axe to correspond with the chop animations and am working on making them feel naturally part of the player animation by learning about control rigs and how to use them to create animation assets in engine.
-
-1/29
-Today, I made an idle, hit, and miss animation for the axe to sync with the player's respective animations and started working on using the AI scoring calculations to apply a delay/speed up to the chops to make it more understandable when AI players get and lose points.
-
-1/30
-Today, I worked on matching the timing of the AI players' chop animations to their score received on each chop to avoid perfect timing each time they act, and am working on syncing the success/fail UI to these offset animations and debugging that animations correspond to the proper beat for scoring.
-
-2/2
-Today, I finished debugging the animation and UI cues for the offset AI player chops and refactored/organized parts of the AI player code to make it more straightforward.
-
 2/4
 Today, I worked on a bug involving the timing of the Listen/Get Ready/Repeat measures where not all 3 cycles go through in play mode despite working in practice mode.
 
@@ -68,6 +31,9 @@ Today, I fixed beats not resetting when entering game mode from practice, and co
 
 2/6
 Today, I continued debugging the UI timing issue, discovering a new, possibly related bug where functionality that should run once per beat runs multiple times, and worked on fixing this.
+
+2/9
+Today, I fixed the issue of multiple-initialization for several audio components, which fixed some of the UI events' timing not lining up, and am now working on trying to fix the out of sync UI in the remaining conditions. I also did some refactoring to better compartmentalize functionality for setting up the minigame.
 ________________________
 
 
@@ -77,6 +43,20 @@ Med flex chop - Already in project
 Heavy flex chop - "knife_chop", deleted user, on Freesound
 
 
-Notes on debugging AI:
 
-AI controller by name spawns in at more than one player spawned in, thats probably supposed to happen? Random ai controller spawns at 1 player
+Notes on what beats cause UI timing bugs
+Reset during listen + repeat beginning: skips listen ui
+
+Reset during listen 1: skips 
+Reset during get ready 1: 
+Reset during repeat 1: 
+
+Reset during listen 2: skips get ready ui
+Reset during get ready 2: skips listen ui
+Reset during repeat 2: 
+
+
+Most seem to be fixed, now look into maybe timing if UI calls specifically? The gnome technically follows beats properly, maybe some UI calls get thrown off??
+-One call for flip UI is on bar, other is by pause beats (which is called inside of itself, for the pause during get ready then transition to repeat)
+
+CHECK ON BAR CALLS, FI8ND WAY TO DELAY FIRST CALL OF THIS TO AFTER CUTSCENE????
