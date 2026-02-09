@@ -59,4 +59,4 @@ Reset during repeat 2:
 Most seem to be fixed, now look into maybe timing if UI calls specifically? The gnome technically follows beats properly, maybe some UI calls get thrown off??
 -One call for flip UI is on bar, other is by pause beats (which is called inside of itself, for the pause during get ready then transition to repeat)
 
-CHECK ON BAR CALLS, FI8ND WAY TO DELAY FIRST CALL OF THIS TO AFTER CUTSCENE????
+CHECK ON BAR CALLS, FI8ND WAY TO DELAY FIRST CALL OF THIS TO AFTER CUTSCENE????		
