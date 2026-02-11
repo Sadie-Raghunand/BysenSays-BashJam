@@ -17,7 +17,8 @@ Playtesting for bugs and such
 
 
 ----Done today:----
-Discovered that the beats in gamemode run twice, continue debugging this issue in hopes its related to UI timing
+Fix Listen/Get Ready/Repeat UI timing in the game mode for some more instances, and have one situation left to debug
+Fix chop type UI not disappearing sometimes
 
 
 
@@ -34,6 +35,9 @@ Today, I continued debugging the UI timing issue, discovering a new, possibly re
 
 2/9
 Today, I fixed the issue of multiple-initialization for several audio components, which fixed some of the UI events' timing not lining up, and am now working on trying to fix the out of sync UI in the remaining conditions. I also did some refactoring to better compartmentalize functionality for setting up the minigame.
+
+2/11
+Today, I continued to work on the Listen/Get Ready/Repeat UI timing in the game mode and was able to fix the bug for all but one circumstance and fixed an issue where the UI showing which chop type the gnome does not disappear after the gnome's turn sometimes.
 ________________________
 
 
@@ -42,21 +46,3 @@ Light flex chop - "chopping wood 2" by Jay_You on Freesound
 Med flex chop - Already in project
 Heavy flex chop - "knife_chop", deleted user, on Freesound
 
-
-
-Notes on what beats cause UI timing bugs
-Reset during listen + repeat beginning: skips listen ui
-
-Reset during listen 1: skips 
-Reset during get ready 1: 
-Reset during repeat 1: 
-
-Reset during listen 2: skips get ready ui
-Reset during get ready 2: skips listen ui
-Reset during repeat 2: 
-
-
-Most seem to be fixed, now look into maybe timing if UI calls specifically? The gnome technically follows beats properly, maybe some UI calls get thrown off??
--One call for flip UI is on bar, other is by pause beats (which is called inside of itself, for the pause during get ready then transition to repeat)
-
-CHECK ON BAR CALLS, FI8ND WAY TO DELAY FIRST CALL OF THIS TO AFTER CUTSCENE????		
