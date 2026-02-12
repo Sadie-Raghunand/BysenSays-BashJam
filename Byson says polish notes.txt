@@ -1,10 +1,8 @@
+
 Byson says polish notes
 
 ______________________________________
 ----Bugs:----
-Listen measures don't occur in game mode even though it works in practice mode
-	Ok now get ready measures dont occur?
-	OK sometimes des one sometimes does the other
 
 
 ----Polish ideas:---- 
@@ -17,10 +15,9 @@ Playtesting for bugs and such
 
 
 ----Done today:----
-Fix Listen/Get Ready/Repeat UI timing in the game mode for some more instances, and have one situation left to debug
-Fix chop type UI not disappearing sometimes
-
-
+Fix Listen/Get Ready/Repeat UI timing in the game mode
+Fix caused chop type UI to always clear, fix bug (not direct cause, quick fix but idk put in weekly report anyway)
+Fix Listen meausres/gnome chops extending into the get ready portion by one beat
 
 _________________________________________
 ----Weekly reports:---- 
@@ -38,6 +35,9 @@ Today, I fixed the issue of multiple-initialization for several audio components
 
 2/11
 Today, I continued to work on the Listen/Get Ready/Repeat UI timing in the game mode and was able to fix the bug for all but one circumstance and fixed an issue where the UI showing which chop type the gnome does not disappear after the gnome's turn sometimes.
+
+2/12
+Today, I fixed the last remaining situations where the Chop UI would skip parts of the cycle, fixed the chop type UI constantly clearing, fixed gnome beats being off by 1 beat out of sync with the UI, and continued playtesting and stress testing the game for more bugs.
 ________________________
 
 
