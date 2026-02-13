@@ -3,6 +3,9 @@ Byson says polish notes
 
 ______________________________________
 ----Bugs:----
+Player an animations don't interrupt each other quick enough
+UI chop type appears during listen then repeat text at beginning
+Resove competition bw good job and winner UI, need to add winner UI to end UI?
 
 
 ----Polish ideas:---- 
@@ -12,12 +15,13 @@ _______________________________________
 ----In progress:----
 Debugging/bug searching AI incorporation
 Playtesting for bugs and such
+Debugging winner UI + good job conflicting for which plays
 
 
 ----Done today:----
-Fix Listen/Get Ready/Repeat UI timing in the game mode
-Fix caused chop type UI to always clear, fix bug (not direct cause, quick fix but idk put in weekly report anyway)
-Fix Listen meausres/gnome chops extending into the get ready portion by one beat
+Fix bug where the text for showing who won does not show the player name
+Fix AI players continuing to play during the ending cutscene
+Fix game ending early and the player's last turn being cut into
 
 _________________________________________
 ----Weekly reports:---- 
@@ -38,6 +42,10 @@ Today, I continued to work on the Listen/Get Ready/Repeat UI timing in the game 
 
 2/12
 Today, I fixed the last remaining situations where the Chop UI would skip parts of the cycle, fixed the chop type UI constantly clearing, fixed gnome beats being off by 1 beat out of sync with the UI, and continued playtesting and stress testing the game for more bugs.
+
+2/13
+Today, I started testing and working on bugs in the end game state, fixing a bug where the text for who won doesn't show the player name, a bug where AI players keep playing during the end cutscene, and a bug where the game ends early and cuts off the players' last few turns.  I am working now on integrating the winner name UI with the good job UI when the game ends.
+
 ________________________
 
 
