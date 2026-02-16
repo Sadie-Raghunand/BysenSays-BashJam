@@ -3,9 +3,8 @@ Byson says polish notes
 
 ______________________________________
 ----Bugs:----
-Player an animations don't interrupt each other quick enough
-UI chop type appears during listen then repeat text at beginning
-Resove competition bw good job and winner UI, need to add winner UI to end UI?
+Player an animations don't interrupt each other quick enough (low priority)
+Miss Ui doesn't appear o empty meausires
 
 
 ----Polish ideas:---- 
@@ -13,15 +12,13 @@ Relook at player animations playing w montage vs sequence player
 
 _______________________________________
 ----In progress:----
-Debugging/bug searching AI incorporation
-Playtesting for bugs and such
-Debugging winner UI + good job conflicting for which plays
+Refactor arrays for storing beat data to only be one array w struct
 
 
 ----Done today:----
-Fix bug where the text for showing who won does not show the player name
-Fix AI players continuing to play during the ending cutscene
-Fix game ending early and the player's last turn being cut into
+Fix the chop type UI extending between practice + game mode
+Fix brief window early in game where player is able to chop when they shouldn't 
+Fix conflict between "good job" UI and UI for winner name
 
 _________________________________________
 ----Weekly reports:---- 
@@ -45,6 +42,11 @@ Today, I fixed the last remaining situations where the Chop UI would skip parts 
 
 2/13
 Today, I started testing and working on bugs in the end game state, fixing a bug where the text for who won doesn't show the player name, a bug where AI players keep playing during the end cutscene, and a bug where the game ends early and cuts off the players' last few turns.  I am working now on integrating the winner name UI with the good job UI when the game ends.
+
+
+2/16
+Today, I fixed the chop type UI extending between practice and game mode, fixed brief window early in game where player is able to chop when they shouldn't, and fixed conflict between "good job" UI and UI for winner name.  I began working on fixing the Miss UI not appearing if the player doesn't chop on a beat that should have a chop, and  have determined that the system controlling storing beat and measure data would be better consolidated into a custom struct, so have begun refactoring the project to use that instead.
+
 
 ________________________
 
