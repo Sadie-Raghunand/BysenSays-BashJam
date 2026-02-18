@@ -3,8 +3,7 @@ Byson says polish notes
 
 ______________________________________
 ----Bugs:----
-Player an animations don't interrupt each other quick enough (low priority)
-Miss Ui doesn't appear o empty meausires
+
 
 
 ----Polish ideas:---- 
@@ -16,9 +15,7 @@ Refactor arrays for storing beat data to only be one array w struct
 
 
 ----Done today:----
-Fix the chop type UI extending between practice + game mode
-Fix brief window early in game where player is able to chop when they shouldn't 
-Fix conflict between "good job" UI and UI for winner name
+
 
 _________________________________________
 ----Weekly reports:---- 
@@ -46,6 +43,9 @@ Today, I started testing and working on bugs in the end game state, fixing a bug
 
 2/16
 Today, I fixed the chop type UI extending between practice and game mode, fixed brief window early in game where player is able to chop when they shouldn't, and fixed conflict between "good job" UI and UI for winner name.  I began working on fixing the Miss UI not appearing if the player doesn't chop on a beat that should have a chop, and  have determined that the system controlling storing beat and measure data would be better consolidated into a custom struct, so have begun refactoring the project to use that instead.
+
+2/18
+Today I finished the initial conversion of the arrays to track beats from being two separate ones using different data types into one using a custom struct to store more data, and am working on debugging the implementation. 
 
 
 ________________________
