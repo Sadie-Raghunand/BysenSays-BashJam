@@ -3,7 +3,7 @@ Byson says polish notes
 
 ______________________________________
 ----Bugs:----
-
+Assigns 5 gnome measures in new array and 3 player measures!
 
 
 ----Polish ideas:---- 
@@ -11,10 +11,13 @@ Relook at player animations playing w montage vs sequence player
 
 _______________________________________
 ----In progress:----
-Refactor arrays for storing beat data to only be one array w struct
+Debug refactor w struct
+Debugging set beat function
 
 
 ----Done today:----
+Replace all references to the old beat data tracking methods, integrate new thing fully
+Refactor some of the methods used to track beat data to be simpler and better commented
 
 
 _________________________________________
@@ -47,7 +50,8 @@ Today, I fixed the chop type UI extending between practice and game mode, fixed 
 2/18
 Today I finished the initial conversion of the arrays to track beats from being two separate ones using different data types into one using a custom struct to store more data, and am working on debugging the implementation. 
 
-
+2/20
+Today, I continued fully integrating and debugging the new struct focused way of tracking each beat's data, and am working on debugging the "miss" UI not popping up when the player doesn't chop on a beat that they should, as well as refactoring/re-commenting blueprints controlling the beat data.
 ________________________
 
 
