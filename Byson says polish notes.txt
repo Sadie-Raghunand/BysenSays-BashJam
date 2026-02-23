@@ -16,8 +16,7 @@ Debugging set beat function
 
 
 ----Done today:----
-Replace all references to the old beat data tracking methods, integrate new thing fully
-Refactor some of the methods used to track beat data to be simpler and better commented
+
 
 
 _________________________________________
@@ -52,6 +51,9 @@ Today I finished the initial conversion of the arrays to track beats from being 
 
 2/20
 Today, I continued fully integrating and debugging the new struct focused way of tracking each beat's data, and am working on debugging the "miss" UI not popping up when the player doesn't chop on a beat that they should, as well as refactoring/re-commenting blueprints controlling the beat data.
+
+2/23
+Today, I continued working on some bugs leftover from switching over to the struct-based system, which seems to have caused the number of beats in a measure for gnomes vs players to be unbalanced, as well as continued work on the miss UI bug.
 ________________________
 
 
@@ -59,4 +61,9 @@ Other sfx credits that I added
 Light flex chop - "chopping wood 2" by Jay_You on Freesound
 Med flex chop - Already in project
 Heavy flex chop - "knife_chop", deleted user, on Freesound
+
+
+Brainstorming:
+I think the  issue is that listen measure is being set too late, maybe move it up?
+May be worth going back to a branch before struct and making sure it was working properly, like 4-4 measures, and if so check everywhere now where new array w struct is referenced?
 
