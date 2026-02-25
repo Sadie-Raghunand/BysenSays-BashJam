@@ -11,12 +11,11 @@ Relook at player animations playing w montage vs sequence player
 
 _______________________________________
 ----In progress:----
-Debug refactor w struct
-Debugging set beat function
+Miss UI bug
 
 
 ----Done today:----
-
+Fix assignmenmrf if 5 gnome measures and 3 player measures + fix subsequent offset at begining
 
 
 _________________________________________
@@ -54,6 +53,9 @@ Today, I continued fully integrating and debugging the new struct focused way of
 
 2/23
 Today, I continued working on some bugs leftover from switching over to the struct-based system, which seems to have caused the number of beats in a measure for gnomes vs players to be unbalanced, as well as continued work on the miss UI bug.
+
+2/25
+Today, I fixed the bug where the measures would be split 5/3 between gnome and player turns that appeared after implementing the struct, fixed a bug that also appeared after the struct implementation where the beginning was offset by one beat, and continued working on the "Miss" UI not showing when the player doesn't chop on a beat with a chop on it.
 ________________________
 
 
@@ -62,8 +64,4 @@ Light flex chop - "chopping wood 2" by Jay_You on Freesound
 Med flex chop - Already in project
 Heavy flex chop - "knife_chop", deleted user, on Freesound
 
-
-Brainstorming:
-I think the  issue is that listen measure is being set too late, maybe move it up?
-May be worth going back to a branch before struct and making sure it was working properly, like 4-4 measures, and if so check everywhere now where new array w struct is referenced?
 
