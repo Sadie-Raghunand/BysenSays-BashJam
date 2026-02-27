@@ -3,7 +3,7 @@ Byson says polish notes
 
 ______________________________________
 ----Bugs:----
-Assigns 5 gnome measures in new array and 3 player measures!
+
 
 
 ----Polish ideas:---- 
@@ -11,11 +11,17 @@ Relook at player animations playing w montage vs sequence player
 
 _______________________________________
 ----In progress:----
-Miss UI bug
+Miss UI bug, doing some debugging and getting to the root of the issue
+	Ok now works sometimes? doesn't equal crrect # of beats missed
+`	MISSES Dividends of 4!!
+	dIVIDENT OF 4 IS GETTING WRAPPED INTO NON LISTEN MEAUSRES??
+	IS is listening messing up miss ui? - search this in find results to find where left off
+	OK no timing of those beats are just messed up, need to look into timing
+
 
 
 ----Done today:----
-Fix assignmenmrf if 5 gnome measures and 3 player measures + fix subsequent offset at begining
+I have a better idea of the bug a least, sort of fixed except for one part
 
 
 _________________________________________
@@ -56,6 +62,12 @@ Today, I continued working on some bugs leftover from switching over to the stru
 
 2/25
 Today, I fixed the bug where the measures would be split 5/3 between gnome and player turns that appeared after implementing the struct, fixed a bug that also appeared after the struct implementation where the beginning was offset by one beat, and continued working on the "Miss" UI not showing when the player doesn't chop on a beat with a chop on it.
+
+2/26
+Today, I continued to work on debugging the "Miss" UI bug and got feedback  on my resume.
+
+2/27
+Today, I made some progress in the "Miss" Ui bug, so it shows up most of the time at correct points.  I have found some information on why it may not work on particular beats and have made good progress towards fixing it for those beats as well.
 ________________________
 
 
