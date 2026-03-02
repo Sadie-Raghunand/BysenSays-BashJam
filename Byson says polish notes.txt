@@ -12,12 +12,9 @@ Relook at player animations playing w montage vs sequence player
 _______________________________________
 ----In progress:----
 Miss UI bug, doing some debugging and getting to the root of the issue
-	Ok now works sometimes? doesn't equal crrect # of beats missed
-`	MISSES Dividends of 4!!
-	dIVIDENT OF 4 IS GETTING WRAPPED INTO NON LISTEN MEAUSRES??
-	IS is listening messing up miss ui? - search this in find results to find where left off
 	OK no timing of those beats are just messed up, need to look into timing
-
+	This may take som refactoring AAAAAAAAAAAAAAAAAAAAA
+	Need it to run on measures where n%8=7, but runs on bar, which are only intervals of 4
 
 
 ----Done today:----
@@ -68,6 +65,9 @@ Today, I continued to work on debugging the "Miss" UI bug and got feedback  on m
 
 2/27
 Today, I made some progress in the "Miss" Ui bug, so it shows up most of the time at correct points.  I have found some information on why it may not work on particular beats and have made good progress towards fixing it for those beats as well.
+
+3/2
+Today, I got really close to fixing the timing of the beats bug, and should be able to fix it early the next time I'm in the lab.
 ________________________
 
 
