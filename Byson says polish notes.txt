@@ -23,34 +23,6 @@ I have a better idea of the bug a least, sort of fixed except for one part
 
 _________________________________________
 ----Weekly reports:---- 
-2/4
-Today, I worked on a bug involving the timing of the Listen/Get Ready/Repeat measures where not all 3 cycles go through in play mode despite working in practice mode.
-
-2/5
-Today, I fixed beats not resetting when entering game mode from practice, and continued trying to debug the UI in game mode not lining up with the timing.
-
-2/6
-Today, I continued debugging the UI timing issue, discovering a new, possibly related bug where functionality that should run once per beat runs multiple times, and worked on fixing this.
-
-2/9
-Today, I fixed the issue of multiple-initialization for several audio components, which fixed some of the UI events' timing not lining up, and am now working on trying to fix the out of sync UI in the remaining conditions. I also did some refactoring to better compartmentalize functionality for setting up the minigame.
-
-2/11
-Today, I continued to work on the Listen/Get Ready/Repeat UI timing in the game mode and was able to fix the bug for all but one circumstance and fixed an issue where the UI showing which chop type the gnome does not disappear after the gnome's turn sometimes.
-
-2/12
-Today, I fixed the last remaining situations where the Chop UI would skip parts of the cycle, fixed the chop type UI constantly clearing, fixed gnome beats being off by 1 beat out of sync with the UI, and continued playtesting and stress testing the game for more bugs.
-
-2/13
-Today, I started testing and working on bugs in the end game state, fixing a bug where the text for who won doesn't show the player name, a bug where AI players keep playing during the end cutscene, and a bug where the game ends early and cuts off the players' last few turns.  I am working now on integrating the winner name UI with the good job UI when the game ends.
-
-
-2/16
-Today, I fixed the chop type UI extending between practice and game mode, fixed brief window early in game where player is able to chop when they shouldn't, and fixed conflict between "good job" UI and UI for winner name.  I began working on fixing the Miss UI not appearing if the player doesn't chop on a beat that should have a chop, and  have determined that the system controlling storing beat and measure data would be better consolidated into a custom struct, so have begun refactoring the project to use that instead.
-
-2/18
-Today I finished the initial conversion of the arrays to track beats from being two separate ones using different data types into one using a custom struct to store more data, and am working on debugging the implementation. 
-
 2/20
 Today, I continued fully integrating and debugging the new struct focused way of tracking each beat's data, and am working on debugging the "miss" UI not popping up when the player doesn't chop on a beat that they should, as well as refactoring/re-commenting blueprints controlling the beat data.
 
@@ -71,6 +43,9 @@ Today, I got really close to fixing the timing of the beats bug, and should be a
 
 3/4
 Today, I was unable to fully fix the bug but have made more progress with finding its root cause. I may reach out to other teammates next time I'm in the lab for help, but I think I'm pretty close to solving the issue even though its a lot deeper than originally thought (has to do with quantization clocks not starting/stopping properly).  I also worked with Summer to test Bionic Beach and helped out a bit with the field trip.
+
+3/5
+Today, I was still unable to fix the bug, but working with Emma was able to make progress where the game unpauses at the correct time without looping the pause functionality, it just cannot update the listen/get ready/repeat UI after the first "get ready", but I am testing some checks to prevent the loop while maintaining the repeating nature of the beat calls.
 ________________________
 
 
@@ -80,3 +55,12 @@ Med flex chop - Already in project
 Heavy flex chop - "knife_chop", deleted user, on Freesound
 
 
+Brainstorming
+Lets treat Event_FlipUI and UpdateChopUI as the same call, bc they are binded
+All calls:
+	On bar if num bar is less than 20 (switch to "listen")
+	End of Pause music/beats event, this is what should change to "get ready"
+	On every fourth beat
+The pause music event seems to run in a loop.  The pause event is called by the flip UI function 
+Flip UI is called by Event_FlipUI/UpdateChopUI
+So it goes UpdateChopUI > Flip UI > Pause music > UpdateChopUI! 
