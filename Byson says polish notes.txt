@@ -70,7 +70,7 @@ Today, I made some progress in the "Miss" Ui bug, so it shows up most of the tim
 Today, I got really close to fixing the timing of the beats bug, and should be able to fix it early the next time I'm in the lab.
 
 3/4
-Today, I was unable to fully fix the bug but have made more progress with finding its root cause. I may reach out to other teammates next time I'm in the lab for help, but I think I'm pretty close to solving the issue even though its a lot deeper than originally thought.  I also worked with Summer to test Bionic Beach and helped out a bit with the field trip.
+Today, I was unable to fully fix the bug but have made more progress with finding its root cause. I may reach out to other teammates next time I'm in the lab for help, but I think I'm pretty close to solving the issue even though its a lot deeper than originally thought (has to do with quantization clocks not starting/stopping properly).  I also worked with Summer to test Bionic Beach and helped out a bit with the field trip.
 ________________________
 
 
