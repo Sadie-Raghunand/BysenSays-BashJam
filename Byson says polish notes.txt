@@ -46,6 +46,9 @@ Today, I was unable to fully fix the bug but have made more progress with findin
 
 3/5
 Today, I was still unable to fix the bug, but working with Emma was able to make progress where the game unpauses at the correct time without looping the pause functionality, it just cannot update the listen/get ready/repeat UI after the first "get ready", but I am testing some checks to prevent the loop while maintaining the repeating nature of the beat calls.
+
+3/6
+Today, I was still unable to fix the bug and I think I may have made it worse, but I believe I have found the root cause, I just am working on fixing that cause.  In the process, I created (but fixed) another bug.  Next time I m in the lab, I will reach out to some others about help again.  I also collected footage for my portfolio of the work I have done thus far at Limbitless.
 ________________________
 
 
