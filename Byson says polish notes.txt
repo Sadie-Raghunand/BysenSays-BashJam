@@ -46,6 +46,9 @@ Today, I was unable to fully fix the bug but have made more progress with findin
 
 3/5
 Today, I was still unable to fix the bug, but working with Emma was able to make progress where the game unpauses at the correct time without looping the pause functionality, it just cannot update the listen/get ready/repeat UI after the first "get ready", but I am testing some checks to prevent the loop while maintaining the repeating nature of the beat calls.
+
+3/23
+Today, I fixed the bug where the UI displaying which character's (players/gnome) turn it is would get stuck on the "Get Ready" text and not transition to player input.  The timing of the gnome's chops are now slightly off, which I am fixing.
 ________________________
 
 
