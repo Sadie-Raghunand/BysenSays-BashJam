@@ -18,7 +18,7 @@ Miss UI bug, doing some debugging and getting to the root of the issue
 
 
 ----Done today:----
-I have a better idea of the bug a least, sort of fixed except for one part
+Check flip UI refactor comment
 
 
 _________________________________________
@@ -49,6 +49,9 @@ Today, I was still unable to fix the bug, but working with Emma was able to make
 
 3/23
 Today, I fixed the bug where the UI displaying which character's (players/gnome) turn it is would get stuck on the "Get Ready" text and not transition to player input.  The timing of the gnome's chops are now slightly off, which I am fixing.
+
+3/25
+Today, I have gotten to the root of the issue of the bug I have been fixing (its a mathematical calculation regarding which beats get assigned on the UI end as gnome vs player turns), and began implementing a solution which should be done and tested by the end of the week.
 ________________________
 
 
@@ -67,3 +70,11 @@ All calls:
 The pause music event seems to run in a loop.  The pause event is called by the flip UI function 
 Flip UI is called by Event_FlipUI/UpdateChopUI
 So it goes UpdateChopUI > Flip UI > Pause music > UpdateChopUI! 
+
+Listen - 2 beats, starts on correct beat
+Get rady - time equivalent of 5 beats
+Repeqat - 4 beats
+
+
+During beats marked as isGnomeBeat - show Listen, non-isGnomeBeats - show Repeat
+side note - get A copy vs get a ref for arrays, make sure to use most optimal ones
