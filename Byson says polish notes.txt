@@ -52,6 +52,9 @@ Today, I fixed the bug where the UI displaying which character's (players/gnome)
 
 3/25
 Today, I have gotten to the root of the issue of the bug I have been fixing (its a mathematical calculation regarding which beats get assigned on the UI end as gnome vs player turns), and began implementing a solution which should be done and tested by the end of the week.
+
+3/26
+In progress making solution to bug
 ________________________
 
 
