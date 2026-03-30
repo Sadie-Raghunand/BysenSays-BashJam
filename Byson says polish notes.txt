@@ -3,7 +3,8 @@ Byson says polish notes
 
 ______________________________________
 ----Bugs:----
-
+Chop type UI gone??
+Cop phase UI not appearing in game mode?
 
 
 ----Polish ideas:---- 
@@ -55,7 +56,9 @@ Today, I have gotten to the root of the issue of the bug I have been fixing (its
 
 3/26
 In progress making solution to bug
-________________________
+
+3/30
+Today, I fixed the UI bug for displaying which phase/turn the game was in, refactored the code, and cleaned up blueprints in general because in the debugging process some got messy and complicated.________________________
 
 
 Other sfx credits that I added
