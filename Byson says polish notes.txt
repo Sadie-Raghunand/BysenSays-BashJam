@@ -3,8 +3,7 @@ Byson says polish notes
 
 ______________________________________
 ----Bugs:----
-Chop type UI gone??
-Cop phase UI not appearing in game mode?
+Chop phase/turn is off in game mode >:(
 
 
 ----Polish ideas:---- 
@@ -12,15 +11,14 @@ Relook at player animations playing w montage vs sequence player
 
 _______________________________________
 ----In progress:----
-Miss UI bug, doing some debugging and getting to the root of the issue
-	OK no timing of those beats are just messed up, need to look into timing
-	This may take som refactoring AAAAAAAAAAAAAAAAAAAAA
-	Need it to run on measures where n%8=7, but runs on bar, which are only intervals of 4
+Optimization & refactoring work
+Will probably discuss next steps tomorrow (AI in archery????)
 
 
 ----Done today:----
-Check flip UI refactor comment
-
+Fix missing chop type UI
+Blueprint cleanup
+Quick fix on UI in game mode
 
 _________________________________________
 ----Weekly reports:---- 
@@ -68,19 +66,7 @@ Heavy flex chop - "knife_chop", deleted user, on Freesound
 
 
 Brainstorming
-Lets treat Event_FlipUI and UpdateChopUI as the same call, bc they are binded
-All calls:
-	On bar if num bar is less than 20 (switch to "listen")
-	End of Pause music/beats event, this is what should change to "get ready"
-	On every fourth beat
-The pause music event seems to run in a loop.  The pause event is called by the flip UI function 
-Flip UI is called by Event_FlipUI/UpdateChopUI
-So it goes UpdateChopUI > Flip UI > Pause music > UpdateChopUI! 
-
-Listen - 2 beats, starts on correct beat
-Get rady - time equivalent of 5 beats
-Repeqat - 4 beats
 
 
-During beats marked as isGnomeBeat - show Listen, non-isGnomeBeats - show Repeat
+
 side note - get A copy vs get a ref for arrays, make sure to use most optimal ones
