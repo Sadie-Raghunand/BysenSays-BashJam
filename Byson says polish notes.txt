@@ -2,12 +2,13 @@
 Byson says polish notes
 
 ______________________________________
-----Bugs:----
-Chop phase/turn is off in game mode >:(
+----Bugs:(----
+Gnome seems offset, gets worse the longer the game goes on
+Player is incorrect no matter what? Incorrect -> the game us just very unforgiving, maybe relax restraints
+Miss UI occasionally appears during first frame if get ready, I think the beat timing is still off
 
 
 ----Polish ideas:---- 
-Relook at player animations playing w montage vs sequence player
 
 _______________________________________
 ----In progress:----
@@ -16,9 +17,7 @@ Will probably discuss next steps tomorrow (AI in archery????)
 
 
 ----Done today:----
-Fix missing chop type UI
-Blueprint cleanup
-Quick fix on UI in game mode
+Help I'm bugfixing again oh god
 
 _________________________________________
 ----Weekly reports:---- 
