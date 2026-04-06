@@ -12,8 +12,7 @@ Miss UI occasionally appears during first frame if get ready, I think the beat t
 
 _______________________________________
 ----In progress:----
-Optimization & refactoring work
-Will probably discuss next steps tomorrow (AI in archery????)
+
 
 
 ----Done today:----
@@ -57,6 +56,9 @@ In progress making solution to bug
 3/30
 Today, I fixed the UI bug for displaying which phase/turn the game was in, refactored the code, and cleaned up blueprints in general because in the debugging process some got messy and complicated.________________________
 
+
+4/6
+Today, I worked on fixing the miss Ui popping up for one or two beats in the gnome's turn, caused by an offset of when the get ready pause occurs by experimenting with and researching resets, delays, and other aspects of the quantization clock system in Unreal, which I have learned more about, and combining that with reading the completed percent of certain beats. 
 
 Other sfx credits that I added
 Light flex chop - "chopping wood 2" by Jay_You on Freesound
