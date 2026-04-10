@@ -3,9 +3,7 @@ Byson says polish notes
 
 ______________________________________
 ----Bugs:(----
-Gnome seems offset, gets worse the longer the game goes on
-Player is incorrect no matter what? Incorrect -> the game us just very unforgiving, maybe relax restraints
-Miss UI occasionally appears during first frame if get ready, I think the beat timing is still off
+Clearing chop type ui on last frame of the 
 
 
 ----Polish ideas:---- 
@@ -65,6 +63,10 @@ Today, I worked on fixing the bugs from playtesting, primarily preventing the la
 
 4/9
 Today, I worked on organizing event calls to more closely relate functionality that should happen at the same time to clean up blueprints and assist in the debugging process.  I also checked out the Stratasys pop-up.
+
+4/10
+Today, I helped playtest Bionic Beach, worked on my state of the games slide, worked on the gnome/UI/chop type UI timing and fixed abug where any call on the  last beat of te measure would clear tthe UI too fast, and started working on balancing the leniency threshold for the player's input.
+
 
 Other sfx credits that I added
 Light flex chop - "chopping wood 2" by Jay_You on Freesound
