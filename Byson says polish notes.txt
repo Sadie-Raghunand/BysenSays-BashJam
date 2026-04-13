@@ -3,8 +3,7 @@ Byson says polish notes
 
 ______________________________________
 ----Bugs:(----
-Clearing chop type ui on last frame of the 
-
+In game cycle UI is messed up again this IS the bane of my existence I WILL be fighting someone
 
 ----Polish ideas:---- 
 
@@ -66,6 +65,9 @@ Today, I worked on organizing event calls to more closely relate functionality t
 
 4/10
 Today, I helped playtest Bionic Beach, worked on my state of the games slide, worked on the gnome/UI/chop type UI timing and fixed abug where any call on the  last beat of te measure would clear tthe UI too fast, and started working on balancing the leniency threshold for the player's input.
+
+4/13
+Today, I did some work on increasing the  leniency for the player regarding timing, fixed the UI showing which chop type plays disappearing too quickly without affecting the timing in the game's clock, fixed the winner text on the UI showing text at the incorrect time, and organized some of the blueprints that had too much functionality in them.
 
 
 Other sfx credits that I added
