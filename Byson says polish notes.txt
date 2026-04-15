@@ -1,9 +1,10 @@
 
-Byson says polish notes
+Byson says polish notes future read me for end of semester
 
 ______________________________________
 ----Bugs:(----
 In game cycle UI is messed up again this IS the bane of my existence I WILL be fighting someone
+Uuhhh check leniency
 
 ----Polish ideas:---- 
 
@@ -68,6 +69,9 @@ Today, I helped playtest Bionic Beach, worked on my state of the games slide, wo
 
 4/13
 Today, I did some work on increasing the  leniency for the player regarding timing, fixed the UI showing which chop type plays disappearing too quickly without affecting the timing in the game's clock, fixed the winner text on the UI showing text at the incorrect time, and organized some of the blueprints that had too much functionality in them.
+
+4/15
+Today, I worked more on balancing the difficulty of the game by balancing the input leniency for beat timing.
 
 
 Other sfx credits that I added
