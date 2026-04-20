@@ -74,6 +74,9 @@ Today, I did some work on increasing the  leniency for the player regarding timi
 Today, I worked more on balancing the difficulty of the game by balancing the input leniency for beat timing.
 
 
+4/20
+Today I continued working on the bug from Friday.  I have discovered its root issue and its related to some timing math I made an error in earlier in development, which I am trying to undo now.
+
 Other sfx credits that I added
 Light flex chop - "chopping wood 2" by Jay_You on Freesound
 Med flex chop - Already in project
