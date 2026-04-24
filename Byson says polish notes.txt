@@ -1,5 +1,5 @@
 
-Byson says polish notes future read me for end of semester
+Bysen says polish notes future read me for end of semester
 
 ______________________________________
 ----Bugs:(----
@@ -13,7 +13,10 @@ _______________________________________
 
 
 ----Done today:----
-Help I'm bugfixing again oh god
+Fix gnome chop missing anim suddenly
+Add anims for fade on all text
+clean blueprinst
+Additional set dressing
 
 _________________________________________
 ----Weekly reports:---- 
@@ -78,6 +81,11 @@ Today I continued working on the bug from Friday.  I have discovered its root is
 
 4/22
 Today, I worked on the bug from last week and cleaned up some blueprints to make the game easier to navigate for any future developers to work on if necessary.
+
+4/24
+Today, I finished organizing the Bysen Says blueprints, applied fade out animations to all UI text elements, fixed an issue that popped up where the gnome wouldn't play the chop animation that happened while I was doing blueprint upkeep, changed the chop-type UI to show words instead of an integer assigned to each chop type, and did some additional set dressing.
+
+
 
 Other sfx credits that I added
 Light flex chop - "chopping wood 2" by Jay_You on Freesound
